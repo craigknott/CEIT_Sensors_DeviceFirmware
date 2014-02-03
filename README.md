@@ -5,8 +5,8 @@ This repository contains firmware for modifications made to panStamp battery boa
 
 temphumpresslight
 =================
- Uses the freetronics light sensor (TEMT6000)
- Installation:
+Uses the freetronics light sensor (TEMT6000)
+Installation:
 ```
   Connect the sensors VCC to pin D9 on the panstamp
   Connect the sensors GND to GND on the panstamp
@@ -15,8 +15,8 @@ temphumpresslight
 ```
 temphumpressspl
 =================
- Uses the freetronics microphone
- Installation:
+Uses the freetronics microphone
+Installation:
 ```
   Connect the sensors VCC to pin D7 on the panstamp
   Connect the sensors GND to GND on the panstamp
@@ -25,8 +25,8 @@ temphumpressspl
 ```
 PIR motion detector
 ===================
- Uses the SEN-08630 PIR motion detector
- Installation:
+Uses the SEN-08630 PIR motion detector
+Installation:
 ```
   Connect the sensors VCC to pin D9 on the panstamp
   Connect the sensors GND to GND on the panstamp
