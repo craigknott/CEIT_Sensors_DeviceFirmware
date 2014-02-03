@@ -4,7 +4,7 @@ CEIT_Sensors_DeviceFirmware
 This repository contains firmware for modifications made to panStamp battery boards already containing TEMT6000 temperature sensors.
 
 temphumpresslight
-=================
+===
 Uses the freetronics light sensor (TEMT6000)
 
 Installation:
@@ -15,7 +15,7 @@ Installation:
   Open the temphumpresslight code in arduino and flash the panstamp with it.
 ```
 temphumpressspl
-=================
+===
 Uses the freetronics microphone
 
 Installation:
@@ -26,7 +26,7 @@ Installation:
   Open the temphumpressspl code in arduino and flash the panstamp with it.
 ```
 PIR motion detector
-===================
+===
 Uses the SEN-08630 PIR motion detector
 
 Installation:
