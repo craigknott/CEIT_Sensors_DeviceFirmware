@@ -1,6 +1,7 @@
 CEIT_Sensors_DeviceFirmware
 ================
-Modified by Craig Knott, original firmware by Daniel Berenguer
+New firmware by Craig Knott, panStamp devices created by Daniel Berenguer www.panstamp.com
+
 This repository contains firmware for modifications made to panStamp battery boards already containing TEMT6000 temperature sensors.
 
 temphumpresslight
