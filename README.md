@@ -6,7 +6,7 @@ This repository contains firmware for modifications made to panStamp battery boa
 
 temphumpresslight
 ===
-Uses the freetronics light sensor (TEMT6000)
+This is a temperature sensor and light intensity sensor using the freetronics light sensor (TEMT6000)
 
 Installation:
 ```
@@ -17,7 +17,7 @@ Installation:
 ```
 temphumpressspl
 ===
-Uses the freetronics microphone
+This is a temperature and sound pressure level sensor using the freetronics microphone
 
 Installation:
 ```
@@ -28,7 +28,7 @@ Installation:
 ```
 PIR motion detector
 ===
-Uses the SEN-08630 PIR motion detector
+This is a motion detector using the SEN-08630 PIR motion detector
 
 Installation:
 ```
