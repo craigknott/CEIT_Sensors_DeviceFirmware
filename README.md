@@ -1,6 +1,6 @@
 CEIT_Sensors_DeviceFirmware
 ================
-
+Modified by Craig Knott, original firmware by Daniel Berenguer
 This repository contains firmware for modifications made to panStamp battery boards already containing TEMT6000 temperature sensors.
 
 temphumpresslight
