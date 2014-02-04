@@ -265,9 +265,13 @@ int sensor_ReadSpl(void)
   splSensorOFF();
   reading /= 10;
   
+  // Convert reading to voltage (mV)
+  float fVolt = (reading * voltageSupply) / 1024.0;
+  unsigned int voltage = fVolt;
+
   // Fill register
-  dtSpl[0] = (reading >> 8) & 0xFF;
-  dtSpl[1] = reading & 0xFF;
+  dtSpl[0] = (voltage >> 8) & 0xFF;
+  dtSpl[1] = voltage & 0xFF;
   return 0;
 }
 #endif

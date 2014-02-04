@@ -25,14 +25,14 @@
     <dev id="5" name="LuminoPod" label="Luminosity sensor"/>
   </developer>
 
-	<developer id="21" name="Craig Knott">
-		<dev id="1" name="temphumpresslight" label="Temp, Humidity and Light Sensor"/>
-		<dev id="2" name="temphumpressspl" label="Temp, Humidity and SPL Sensor"/>
-		<dev id="3" name="pir" label="PIR Motion Detector"/>
-	</developer>
-	<developer id="22" name="Luka Mustafa - Musti">
-		<dev id="1" name="sfpddm" label="SFP DDM monitoring system"/>
-	</developer>
+  <developer id="21" name="Craig Knott">
+    <dev id="1" name="temphumpresslight" label="Temp, Humidity and Light Sensor"/>
+    <dev id="2" name="temphumpressspl" label="Temp, Humidity and SPL Sensor"/>
+    <dev id="3" name="pir" label="PIR Motion Detector"/>
+  </developer>
+  <developer id="22" name="Luka Mustafa - Musti">
+    <dev id="1" name="sfpddm" label="SFP DDM monitoring system"/>
+  </developer>
   <developer id="25" name="IulianV">
 		<dev id="1" name="onewire" label="OneWire Temperature DS18B20x3"/>
   </developer>

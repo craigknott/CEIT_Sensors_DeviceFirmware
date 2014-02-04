@@ -107,8 +107,10 @@ const void updtVoltSupply(byte rId)
    */
 
   // Update register value
-  regTable[rId]->value[0] = (result >> 8) & 0xFF;
-  regTable[rId]->value[1] = result & 0xFF;
+  if (result < 750) {
+    regTable[rId]->value[0] = (result >> 8) & 0xFF;
+    regTable[rId]->value[1] = result & 0xFF;
+  }
 }
 
 /**

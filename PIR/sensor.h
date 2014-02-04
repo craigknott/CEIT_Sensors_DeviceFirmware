@@ -58,6 +58,7 @@
  */
 #ifdef PIR
   byte dtPir[1];
+  int prevVal = 0;
 #endif
 
 /**

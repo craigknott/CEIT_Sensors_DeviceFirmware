@@ -123,16 +123,19 @@ void setup()
 void loop()
 {
 //  digitalWrite(LEDPIN, HIGH);
-  // Transmit SPL data
-  getRegister(REGI_SPL)->getData();
+
+  // Transmit power voltage
+  getRegister(REGI_VOLTSUPPLY)->getData();
   delay(200);
+  
   // Transmit sensor data
   getRegister(REGI_SENSOR)->getData();
   delay(200);
-  // Transmit power voltage
-  getRegister(REGI_VOLTSUPPLY)->getData();
-//  digitalWrite(LEDPIN, LOW);
-
+  
+  // Transmit SPL data
+  getRegister(REGI_SPL)->getData();
+  delay(200);
+  
   // Sleep
   panstamp.goToSleep();
 }

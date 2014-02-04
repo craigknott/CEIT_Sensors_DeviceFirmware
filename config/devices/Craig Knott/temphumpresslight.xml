@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <device>
-  <developer>panStamp</developer>
+  <developer>Craig Knott</developer>
   <product>Temperature and Light Sensor</product>
   <pwrdownmode>true</pwrdownmode>
   <regular>
@@ -27,7 +27,7 @@
       <endpoint name="Light" type="num" dir="inp">
         <size>2</size>
         <units>
-          <unit name="Light" factor="1.0" offset="0"/>
+          <unit name="Light" factor="0.25" offset="0"/>
         </units>
       </endpoint>
     </reg>

@@ -109,8 +109,6 @@ void setup()
 
   // Transmit periodic Tx interval
   getRegister(REGI_TXINTERVAL)->getData();
-  // Transmit power voltage
-  getRegister(REGI_VOLTSUPPLY)->getData();
    // Switch to Rx OFF state
   panstamp.enterSystemState(SYSTATE_RXOFF);
 }
@@ -122,13 +120,8 @@ void setup()
  */
 void loop()
 {
-//  digitalWrite(LEDPIN, HIGH);
-  // Transmit PIR data
   getRegister(REGI_PIR)->getData();
-  delay(200);
-  
+  delay(500);
   // Transmit power voltage
-  getRegister(REGI_VOLTSUPPLY)->getData();
-//  digitalWrite(LEDPIN, LOW);
 }
 

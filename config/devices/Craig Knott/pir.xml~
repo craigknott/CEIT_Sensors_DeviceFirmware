@@ -27,7 +27,7 @@
       <endpoint name="PIR" type="num" dir="inp">
         <size>1</size>
         <units>
-          <unit name="Detected" factor="1.0" offset="0"/>
+          <unit name="Motion" factor="1.0" offset="0"/>
         </units>
       </endpoint>
     </reg>

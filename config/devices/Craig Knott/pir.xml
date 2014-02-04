@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <device>
-  <developer>panStamp</developer>
+  <developer>Craig Knott</developer>
   <product>PIR Sensor</product>
   <pwrdownmode>true</pwrdownmode>
   <regular>

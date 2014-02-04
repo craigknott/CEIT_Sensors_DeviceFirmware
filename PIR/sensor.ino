@@ -250,16 +250,27 @@ int sensor_ReadTempPress(void)
  */
 int sensor_ReadPir(void)
 { 
-  int reading = 1;
-  while(true) {
-    reading = digitalRead(PIN_PIR);
-    //Serial.println(reading);
-    if (reading == 0) {
-      dtPir[0] = 1;
-      delay(200);
-      return 0;  
+  
+  //  Serial.println(prevVal);
+  if (prevVal == 0) {
+     dtPir[0] = 1;
+     prevVal = 1;
+   //  Serial.println(dtPir[0] + "Returning");
+     return 0; 
+  }
+  while (true) {
+    int tmp = digitalRead(PIN_PIR);
+    if (tmp == 0) {
+      digitalWrite(LEDPIN, HIGH);
+      delay(100); 
+      digitalWrite(LEDPIN, LOW);
+      delay(400);
+     //  Serial.println("yep its a 0");
+      dtPir[0] = 0;
+      prevVal = 0;
+      return 0;
     }
-    delay(1000);
+    delay(500);
   }
   return 0;
 }

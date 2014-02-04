@@ -1,4 +1,4 @@
-/**
+/*
  * sensor
  *
  * Copyright (c) 2011 Daniel Berenguer <dberenguer@usapiens.com>
@@ -264,9 +264,13 @@ int sensor_ReadLight(void)
   lhtSensorOFF();
   reading /= 10;
   
+  // Convert reading to voltage (mV)
+  float fVolt = (reading * voltageSupply) / 1024.0;
+  unsigned int voltage = fVolt;
+
   // Fill register
-  dtLight[0] = (reading >> 8) & 0xFF;
-  dtLight[1] = reading & 0xFF;
+  dtLight[0] = (voltage >> 8) & 0xFF;
+  dtLight[1] = voltage & 0xFF;
   return 0;
 }
 #endif

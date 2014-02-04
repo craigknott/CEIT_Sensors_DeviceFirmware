@@ -123,14 +123,19 @@ void setup()
 void loop()
 {
 //  digitalWrite(LEDPIN, HIGH);
-  // Transmit light data
-  getRegister(REGI_LIGHT)->getData();
+
+
+  // Transmit power voltage
+  getRegister(REGI_VOLTSUPPLY)->getData();
   delay(200);
+  
   // Transmit sensor data
   getRegister(REGI_SENSOR)->getData();
   delay(200);
-  // Transmit power voltage
-  getRegister(REGI_VOLTSUPPLY)->getData();
+  
+  // Transmit light data
+  getRegister(REGI_LIGHT)->getData();
+  delay(200);
 //  digitalWrite(LEDPIN, LOW);
 
   // Sleep
